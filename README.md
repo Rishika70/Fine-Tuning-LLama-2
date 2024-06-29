@@ -28,7 +28,7 @@
 
 # Example
 
-from transformers import LlamaForCausalLM, LlamaTokenizer
+'''from transformers import LlamaForCausalLM, LlamaTokenizer
 
 Load the fine-tuned model and tokenizer
 model = LlamaForCausalLM.from_pretrained("path/to/fine-tuned-model")
@@ -39,5 +39,5 @@ input_text = "The quick brown fox jumps over the lazy dog."
 input_ids = tokenizer.encode(input_text, return_tensors="pt")
 output = model.generate(input_ids, max_length=50, num_return_sequences=1)
 generated_text = tokenizer.decode(output[0], skip_special_tokens=True)
-print(generated_text)
+print(generated_text)'''
 
