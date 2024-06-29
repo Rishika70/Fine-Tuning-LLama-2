@@ -28,14 +28,13 @@
 
 # Example
 
-
 from transformers import LlamaForCausalLM, LlamaTokenizer
 
-# Load the fine-tuned model and tokenizer
+Load the fine-tuned model and tokenizer
 model = LlamaForCausalLM.from_pretrained("path/to/fine-tuned-model")
 tokenizer = LlamaTokenizer.from_pretrained("path/to/fine-tuned-model")
 
-# Generate text using the fine-tuned model
+Generate text using the fine-tuned model
 input_text = "The quick brown fox jumps over the lazy dog."
 input_ids = tokenizer.encode(input_text, return_tensors="pt")
 output = model.generate(input_ids, max_length=50, num_return_sequences=1)
